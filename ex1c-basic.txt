@@ -1,0 +1,10 @@
+TELLC P  v Q  v  ~R v    S
+TELLC ~Q v ~R
+TELLC ~S
+TELLC ~P      vQ
+TELLC ~tHiSvThAt
+TELLC ~THISvTHIS
+TELLC THIS v ~  THAT
+TELLC F o ovB a rvB a z
+PRINT
+EXIT

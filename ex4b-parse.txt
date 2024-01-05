@@ -1,0 +1,16 @@
+PARSE Foo v Bar
+PARSE Foo ^ (Bar v Baz)
+
+PARSE P ^ (Q ^ (R ^ (S ^ T)))
+PARSE (((P v Q) v R) v S) v T
+PARSE P => (Q => (R => (S => T)))
+PARSE ((P <=> Q) <=> ~R) <=> ~(S <=> ~(T <=> ~U))
+
+PARSE (P ^ Q) => (R <=> ~S)
+PARSE ((P v ~Q) <=> ((S ^ ~S) v Foo))
+PARSE ~((P v ~Q) <=> (~(S ^ ~S) v Foo))
+PARSE ~~~((P v ~Q) <=> ~((~(S ^ ~S) v Foo)))
+
+PARSE (((P))) ^ (((Q)))
+PARSE (((P => Q) ^ ~(P => Q)) ^ (R v S)) <=> (Foo v Bar)
+

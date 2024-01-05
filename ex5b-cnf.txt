@@ -1,0 +1,9 @@
+CNF P v (Q ^ R)
+CNF (P ^ Q) v R
+CNF (P ^ Q) v (R ^ S)
+
+CNF (P ^ (Q)) v (((R)) ^ S)
+CNF (((P ^ (Q))) v (((R)) ^ S))
+CNF (((P) ^ (Q)) v ((R) ^ (S)))
+
+CNF (X1 ^ Y1) v ((X2 ^ Y2) v (X3 ^ Y3))

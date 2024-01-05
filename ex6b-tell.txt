@@ -1,0 +1,36 @@
+TELL P0
+TELL Q0
+TELL R0
+
+TELL P1 ^ Q1
+TELL R1 v S1
+TELL P1 => Q1
+TELL P1 <=> S1
+
+TELL (P2 ^ Q2)
+TELL (R2 v S2)
+TELL (P2 => Q2)
+TELL (P2 <=> S2)
+
+TELL ~P3
+TELL ~~Q3
+TELL ~~~R3
+
+TELL ~(P4)
+TELL ~(~(Q4))
+TELL ~(~(~(R4)))
+
+TELL ~(P5)
+TELL ~~((Q5))
+TELL ~((~(~~R5)))
+
+TELL ~(P6 ^ Q6)
+TELL ~(R6 v S6)
+TELL ~(P6 => Q6)
+TELL ~(P6 <=> S6)
+
+TELL (P7 => Q7) v (Q7 => R7)
+TELL (~P8 <=> Q8) ^ R8
+TELL (~P9 <=> Q9) v R9
+
+PRINT

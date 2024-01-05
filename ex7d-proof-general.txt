@@ -1,0 +1,19 @@
+TELL P1
+TELL Q1 ^ R1
+TELL (P1 ^ R1) => S1
+PROOF P1 ^ S1
+
+TELL P2 => ~(Q2 v R2)
+TELL (~Q2 ^ ~R2) => S2
+PROOF P2 => S2
+
+TELL P3 => (S3 ^ ~U3)
+TELL U3
+PROOF ~P3
+
+TELL (~P4 v Q4) => R4
+TELL S4 v ~Q4
+TELL ~U4
+TELL P4 => U4
+TELL (~P4 ^ R4) => ~S4
+PROOF ~Q4
