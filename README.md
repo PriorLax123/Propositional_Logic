@@ -20,3 +20,6 @@ Clause  : Literal | Literal v Literal | Literal v Literal v Literal | ... (disju
 Sentence: (Clause) | (Clause) ^ (Clause) | ... (conjunction(only "and" connectives) of clauses)   
 
 NOTE: If you try to use a tellc command on a statement that is not a clause it will break this program. If you are telling a sentence please use tell
+
+
+###### Author: Jackson Mishuk
