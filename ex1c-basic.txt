@@ -7,4 +7,14 @@ TELLC ~THISvTHIS
 TELLC THIS v ~  THAT
 TELLC F o ovB a rvB a z
 PRINT
-EXIT
+
+(P v Q v ~R v S)
+(~Q v ~R)
+(~S)
+(~P v Q)
+(ThAt v ~tHiS)
+(THIS v ~THIS)
+(~THAT v THIS)
+(Bar v Baz v Foo)
+> EXIT
+

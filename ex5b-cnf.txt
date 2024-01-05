@@ -1,9 +1,15 @@
-CNF P v (Q ^ R)
-CNF (P ^ Q) v R
-CNF (P ^ Q) v (R ^ S)
+> CNF P v (Q ^ R)
+Result: (P v Q) ^ (P v R)
+> CNF (P ^ Q) v R
+Result: (P v R) ^ (Q v R)
+> CNF (P ^ Q) v (R ^ S)
+Result: (P v R) ^ (Q v R) ^ (P v S) ^ (Q v S)
+> CNF (P ^ (Q)) v (((R)) ^ S)
+Result: (P v R) ^ (Q v R) ^ (P v S) ^ (Q v S)
+> CNF (((P ^ (Q))) v (((R)) ^ S))
+Result: (P v R) ^ (Q v R) ^ (P v S) ^ (Q v S)
+> CNF (((P) ^ (Q)) v ((R) ^ (S)))
+Result: (P v R) ^ (Q v R) ^ (P v S) ^ (Q v S)
+> CNF (X1 ^ Y1) v ((X2 ^ Y2) v (X3 ^ Y3))
+Result: (X1 v X2 v X3) ^ (X2 v X3 v Y1) ^ (X1 v X3 v Y2) ^ (X3 v Y1 v Y2) ^ (X1 v X2 v Y3) ^ (X2 v Y1 v Y3) ^ (X1 v Y2 v Y3) ^ (Y1 v Y2 v Y3)
 
-CNF (P ^ (Q)) v (((R)) ^ S)
-CNF (((P ^ (Q))) v (((R)) ^ S))
-CNF (((P) ^ (Q)) v ((R) ^ (S)))
-
-CNF (X1 ^ Y1) v ((X2 ^ Y2) v (X3 ^ Y3))

@@ -1,36 +1,68 @@
-TELL P0
-TELL Q0
-TELL R0
+> TELL P0
+> TELL Q0
+> TELL R0
+> TELL P1 ^ Q1
+> TELL R1 v S1
+> TELL P1 => Q1
+> TELL P1 <=> S1
+> TELL (P2 ^ Q2)
+> TELL (R2 v S2)
+> TELL (P2 => Q2)
+> TELL (P2 <=> S2)
+> TELL ~P3
+> TELL ~~Q3
+> TELL ~~~R3
+> TELL ~(P4)
+> TELL ~(~(Q4))
+> TELL ~(~(~(R4)))
+> TELL ~(P5)
+> TELL ~~((Q5))
+> TELL ~((~(~~R5)))
+> TELL ~(P6 ^ Q6)
+> TELL ~(R6 v S6)
+> TELL ~(P6 => Q6)
+> TELL ~(P6 <=> S6)
+> TELL (P7 => Q7) v (Q7 => R7)
+> TELL (~P8 <=> Q8) ^ R8
+> TELL (~P9 <=> Q9) v R9
+> PRINT
+(P0)
+(Q0)
+(R0)
+(P1)
+(Q1)
+(R1 v S1)
+(~P1 v Q1)
+(~P1 v S1)
+(P1 v ~S1)
+(P2)
+(Q2)
+(R2 v S2)
+(~P2 v Q2)
+(~P2 v S2)
+(P2 v ~S2)
+(~P3)
+(Q3)
+(~R3)
+(~P4)
+(Q4)
+(~R4)
+(~P5)
+(Q5)
+(R5)
+(~P6 v ~Q6)
+(~R6)
+(~S6)
+(P6)
+(~Q6)
+(P6 v ~P6)
+(~P6 v ~S6)
+(P6 v S6)
+(S6 v ~S6)
+(~P7 v Q7 v ~Q7 v R7)
+(P8 v Q8)
+(~P8 v ~Q8)
+(R8)
+(P9 v Q9 v R9)
+(~P9 v ~Q9 v R9)
 
-TELL P1 ^ Q1
-TELL R1 v S1
-TELL P1 => Q1
-TELL P1 <=> S1
-
-TELL (P2 ^ Q2)
-TELL (R2 v S2)
-TELL (P2 => Q2)
-TELL (P2 <=> S2)
-
-TELL ~P3
-TELL ~~Q3
-TELL ~~~R3
-
-TELL ~(P4)
-TELL ~(~(Q4))
-TELL ~(~(~(R4)))
-
-TELL ~(P5)
-TELL ~~((Q5))
-TELL ~((~(~~R5)))
-
-TELL ~(P6 ^ Q6)
-TELL ~(R6 v S6)
-TELL ~(P6 => Q6)
-TELL ~(P6 <=> S6)
-
-TELL (P7 => Q7) v (Q7 => R7)
-TELL (~P8 <=> Q8) ^ R8
-TELL (~P9 <=> Q9) v R9
-
-PRINT
